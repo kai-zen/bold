@@ -18,7 +18,6 @@ const styles = {
     width: "100%",
     backgroundColor: "secondary.main",
     position: "relative",
-    height: "100vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
