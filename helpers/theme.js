@@ -8,8 +8,8 @@ export const theme = createTheme({
     secondary: {
       main: "#1c2025",
     },
-    error: {
-      main: "#de2e39",
+    dark: {
+      main: "#16191E",
     },
   },
   typography: {

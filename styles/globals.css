@@ -39,3 +39,7 @@ textarea,
 select {
   font: inherit;
 }
+
+.first-reason-img {
+  max-width: 100%;
+}

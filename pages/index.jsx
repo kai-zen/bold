@@ -1,5 +1,5 @@
 import { Divider } from "@/components/common";
-import { Slogan } from "@/sections/home";
+import { Slogan, WhyUs } from "@/sections/home";
 import Head from "next/head";
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
       </Head>
       <Slogan />
       <Divider />
+      <WhyUs />
     </>
   );
 };
