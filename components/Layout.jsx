@@ -16,7 +16,7 @@ const Layout = (props) => {
 const styles = {
   container: {
     width: "100%",
-    backgroundColor: "#1E1E1E",
+    backgroundColor: "secondary.main",
     position: "relative",
     height: "100vh",
     display: "flex",
@@ -42,7 +42,7 @@ const styles = {
     left: "-102px",
     top: "-86px",
     backgroundColor: "#FFF",
-    filter: "blur(400px)",
+    filter: "blur(300px)",
   },
 };
 

@@ -3,10 +3,10 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#F48B1C",
+      main: "#ffffff",
     },
     secondary: {
-      main: "#F48B1C",
+      main: "#1c2025",
     },
     error: {
       main: "#de2e39",
@@ -14,6 +14,9 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: ["Exo", "sans-serif"],
+    button: {
+      textTransform: "none",
+    },
   },
   breakpoints: {
     values: {

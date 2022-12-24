@@ -1,3 +1,4 @@
+import { Slogan } from "@/sections/home";
 import Head from "next/head";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <meta name="description" content="" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
+      <Slogan />
     </>
   );
 };
