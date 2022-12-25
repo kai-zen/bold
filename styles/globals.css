@@ -49,3 +49,25 @@ select {
   font-size: 28px;
   margin-bottom: 36px;
 }
+
+.text-input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: 1px solid #d9d9d9;
+  background-color: transparent;
+  border: 0;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.text-input::placeholder {
+  transition: 0.5s;
+}
+
+.text-input:focus {
+  outline: 2px solid white;
+}
+
+.text-input:focus::placeholder {
+  letter-spacing: 1.5px;
+}
