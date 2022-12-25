@@ -13,7 +13,7 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Exo", "sans-serif"],
+    fontFamily: "Exo",
     button: {
       textTransform: "none",
     },

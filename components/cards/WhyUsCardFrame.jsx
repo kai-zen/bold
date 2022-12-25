@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 const WhyUsCardFrame = (props) => {
   return (
     <Box sx={stlyes.container}>
-      <Typography sx={stlyes.counter}>0{props.index + 1}</Typography>
+      <Typography sx={stlyes.counter}>0{props.counter}</Typography>
       {props.children}
     </Box>
   );
@@ -14,6 +14,9 @@ const stlyes = {
     width: "100%",
     height: "100%",
     position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
     backgroundColor: "secondary.main",
     p: "26px",
   },

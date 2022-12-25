@@ -4,21 +4,48 @@ import { Box, Grid, Typography } from "@mui/material";
 
 const CardOne = () => {
   return (
-    <WhyUsCardFrame>
-      <Box sx={styles.imageBox1}>
+    <WhyUsCardFrame counter={1}>
+      <Box sx={cardsStyles.imageBox1}>
         <img
-          src="/test.svg"
+          src="/images/why-us/one.svg"
           alt="We are reliable!"
-          className="first-reason-img"
+          className="reason-img"
         />
       </Box>
-      <Typography sx={cardsStyles.title1}>
-        Reliable people who won’t waste your freaking time
-      </Typography>
-      <Typography sx={cardsStyles.description1}>
-        Our swift-paced team always commited and put your project as our number
-        one priority. With high quality output without missed from the deadline.
-      </Typography>
+      <Box>
+        <Typography sx={cardsStyles.title1}>
+          Reliable people who won’t waste your freaking time
+        </Typography>
+        <Typography sx={cardsStyles.description1}>
+          Our swift-paced team always commited and put your project as our
+          number one priority. With high quality output without missed from the
+          deadline.
+        </Typography>
+      </Box>
+    </WhyUsCardFrame>
+  );
+};
+
+const CardThree = () => {
+  return (
+    <WhyUsCardFrame counter={2}>
+      <Box sx={{ mt: "10px" }}>
+        <Typography sx={cardsStyles.title3}>
+          Easy communicated your ideas
+        </Typography>
+        <Typography sx={cardsStyles.description1}>
+          You will directly communicated with our Project Manager who cares
+          about your project’s success and maintain a relationship between you
+          and our experienced members.
+        </Typography>
+      </Box>
+      <Box sx={cardsStyles.imageBox3}>
+        <img
+          src="/images/why-us/three.svg"
+          alt="Easy communication!"
+          className="reason-img"
+        />
+      </Box>
     </WhyUsCardFrame>
   );
 };
@@ -32,11 +59,18 @@ const WhyUs = () => {
           We craft your ideas & make it great
         </Typography>
         <Grid container spacing="10px">
-          {[0, 1, 2, 3].map((item, i) => (
-            <Grid item xs={12} lg={6} key={item}>
-              <CardOne />
-            </Grid>
-          ))}
+          <Grid item xs={12} lg={6}>
+            <CardOne />
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <CardThree />
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <CardThree />
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <CardOne />
+          </Grid>
         </Grid>
       </Box>
     </Box>
@@ -70,6 +104,13 @@ const cardsStyles = {
     display: "flex",
     justifyContent: "flex-end",
   },
+  imageBox3: {
+    width: "100%",
+    display: "flex",
+    height: "auto",
+    alignItems: "flex-end",
+    justifyContent: "flex-end",
+  },
   title1: {
     fontSize: "24px",
     fontWeight: "700",
@@ -77,7 +118,14 @@ const cardsStyles = {
     mt: "46px",
     mb: "14px",
   },
-  description1: { fontSize: "14px", fontWeight: "500" },
+  title3: {
+    fontSize: "24px",
+    fontWeight: "700",
+    maxWidth: "360px",
+    mt: "46px",
+    mb: "14px",
+  },
+  description1: { fontSize: "14px", fontWeight: "500", maxWidth: "500px" },
 };
 
 export default WhyUs;
