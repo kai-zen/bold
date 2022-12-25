@@ -43,3 +43,9 @@ select {
 .reason-img {
   max-width: 100%;
 }
+
+.section-title {
+  fontweight: 600;
+  font-size: 28px;
+  margin-bottom: 36px;
+}

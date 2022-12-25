@@ -53,7 +53,7 @@ const CardThree = () => {
 const WhyUs = () => {
   return (
     <Box compnent="section" sx={styles.container}>
-      <Typography sx={styles.title}>Why Us?</Typography>
+      <Typography className="section-title">Why Us?</Typography>
       <Box sx={styles.innerContainer}>
         <Typography sx={styles.innerTitle}>
           We craft your ideas & make it great
@@ -79,7 +79,6 @@ const WhyUs = () => {
 
 const styles = {
   container: { display: "flex", flexDirection: "column", alignItems: "center" },
-  title: { fontWeight: "600", fontSize: "28px", mb: "36px" },
   innerContainer: {
     width: "100%",
     backgroundColor: "dark.main",
