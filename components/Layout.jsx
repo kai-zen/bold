@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { Topbar } from "./sections/layout";
+import { Footer, Topbar } from "./sections/layout";
 
 const Layout = (props) => {
   return (
@@ -7,6 +7,7 @@ const Layout = (props) => {
       <Box sx={styles.childrenBox}>
         <Topbar />
         <Box>{props.children}</Box>
+        <Footer />
       </Box>
       <Box sx={styles.fadeWhiteBullet} />
     </Box>

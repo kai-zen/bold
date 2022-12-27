@@ -12,15 +12,15 @@ const ActionButton = (props) => {
   return (
     <Button
       variant="contained"
-      sx={{ ...stlyes.button, py, px, fontSize, fontWeight }}
+      sx={{ ...styles.button, py, px, fontSize, fontWeight }}
     >
       {props.children}
-      <Box sx={{ ...stlyes.corner, backgroundColor }} />
+      <Box sx={{ ...styles.corner, backgroundColor }} />
     </Button>
   );
 };
 
-const stlyes = {
+const styles = {
   button: {
     borderRadius: 0,
     position: "relative",

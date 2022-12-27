@@ -51,3 +51,15 @@ export const projectsGallery = [
     cols: 1,
   },
 ];
+
+export const projectTypes = [
+  "Web App",
+  "Admin panel",
+  "CMS",
+  "UI/UX",
+  "Others",
+];
+
+export const budgetGroups = ["Under 10m", "10 - 18m", "18 - 30m", "+ 30m"];
+
+export const socialMedia = ["Dribbble", "Instagram", "LinkedIn", "Behance"];
