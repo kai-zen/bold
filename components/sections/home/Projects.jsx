@@ -13,11 +13,35 @@ const Projects = () => {
         gap="1.1%"
       >
         {projectsGallery.map((item) => (
-          <ImageListItem key={item.id} cols={item.cols} rows={item.rows}>
-            <img src={item.img} alt={item.title} loading="lazy" />
+          <ImageListItem
+            key={item.id}
+            cols={item.cols}
+            rows={item.rows}
+            sx={{ filter: "greyscale(100%)" }}
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              loading="lazy"
+              className="project-image"
+            />
           </ImageListItem>
         ))}
       </ImageList>
+      <Typography
+        sx={{
+          textAlign: "right",
+          width: "100%",
+          fontSize: "18px",
+          fontWeight: "500",
+        }}
+      >
+        And{" "}
+        <Box component="span" sx={{ fontSize: "24px", fontWeight: "700" }}>
+          27
+        </Box>{" "}
+        more...
+      </Typography>
     </Box>
   );
 };

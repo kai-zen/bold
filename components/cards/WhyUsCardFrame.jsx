@@ -18,7 +18,7 @@ const stlyes = {
     flexDirection: "column",
     justifyContent: "space-between",
     backgroundColor: "secondary.main",
-    p: "26px",
+    p: "26px 26px 0",
   },
   counter: {
     fontWeight: "700",

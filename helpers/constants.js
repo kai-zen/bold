@@ -38,7 +38,7 @@ export const projectsGallery = [
   },
   {
     id: 6,
-    img: "/images/projects/3.jpg",
+    img: "/images/projects/6.jpg",
     title: "Breakfast",
     rows: 1,
     cols: 1,

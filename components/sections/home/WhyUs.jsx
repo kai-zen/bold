@@ -12,7 +12,7 @@ const CardOne = () => {
           className="reason-img"
         />
       </Box>
-      <Box>
+      <Box sx={{ mb: "26px" }}>
         <Typography sx={cardsStyles.title1}>
           Reliable people who won’t waste your freaking time
         </Typography>
@@ -26,9 +26,31 @@ const CardOne = () => {
   );
 };
 
-const CardThree = () => {
+const CardTwo = () => {
   return (
     <WhyUsCardFrame counter={2}>
+      <Box sx={{ mt: "10px" }}>
+        <Typography sx={cardsStyles.title3}>Bunch of Rockstar Team</Typography>
+        <Typography sx={cardsStyles.description1}>
+          All of our Members have years of experience working in the field and
+          been handled various type of project. So, to get the perfect result
+          couldn’t be something that hard!
+        </Typography>
+      </Box>
+      <Box sx={cardsStyles.imageBox2}>
+        <img
+          src="/images/people.png"
+          alt="We got expert members!"
+          className="reason-img"
+        />
+      </Box>
+    </WhyUsCardFrame>
+  );
+};
+
+const CardThree = () => {
+  return (
+    <WhyUsCardFrame counter={3}>
       <Box sx={{ mt: "10px" }}>
         <Typography sx={cardsStyles.title3}>
           Easy communicated your ideas
@@ -54,6 +76,7 @@ const WhyUs = () => {
   return (
     <Box compnent="section" sx={styles.container}>
       <Typography className="section-title">Why Us?</Typography>
+      <img src="/images/people.png" alt="Our team members." />
       <Box sx={styles.innerContainer}>
         <Typography sx={styles.innerTitle}>
           We craft your ideas & make it great
@@ -63,7 +86,7 @@ const WhyUs = () => {
             <CardOne />
           </Grid>
           <Grid item xs={12} lg={6}>
-            <CardThree />
+            <CardTwo />
           </Grid>
           <Grid item xs={12} lg={6}>
             <CardThree />
@@ -103,12 +126,17 @@ const cardsStyles = {
     display: "flex",
     justifyContent: "flex-end",
   },
+  imageBox2: {
+    width: "100%",
+    display: "flex",
+    alignItems: "flex-end",
+  },
   imageBox3: {
     width: "100%",
     display: "flex",
-    height: "auto",
     alignItems: "flex-end",
     justifyContent: "flex-end",
+    mb: "26px",
   },
   title1: {
     fontSize: "24px",

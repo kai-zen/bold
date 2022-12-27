@@ -1,18 +1,30 @@
 import { ActionButton } from "@/components/common";
-import { Box, Typography } from "@mui/material";
+import { Box, Collapse, Typography } from "@mui/material";
+import { useLayoutEffect, useState } from "react";
 
 const Slogan = () => {
+  const [checked, setChecked] = useState(false);
+
+  useLayoutEffect(() => {
+    setChecked(true);
+    return () => {
+      setChecked(false);
+    };
+  }, []);
+
   return (
-    <Box sx={styles.container}>
-      <Typography component="h2" sx={styles.title}>
-        Don’t Wait For The Right Moments{" "}
-        <Box component="span" sx={styles.span}>
-          Create
-        </Box>{" "}
-        Them With Us!
-      </Typography>
-      <ActionButton>Start New Projects</ActionButton>
-    </Box>
+    <Collapse in={checked} timeout={2000}>
+      <Box sx={styles.container}>
+        <Typography component="h2" sx={styles.title}>
+          Don’t Wait For The Right Moments{" "}
+          <Box component="span" sx={styles.span}>
+            Create
+          </Box>{" "}
+          Them With Us!
+        </Typography>
+        <ActionButton>Start New Projects</ActionButton>
+      </Box>
+    </Collapse>
   );
 };
 

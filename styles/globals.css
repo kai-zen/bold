@@ -83,6 +83,16 @@ select {
   color: #ffffff;
   resize: none;
 }
+
 .css-1ydlrac-MuiButtonBase-root-MuiButton-root {
   line-height: 1.6rem !important;
+}
+
+.project-image {
+  filter: grayscale(90%);
+  transition: 0.5s;
+}
+
+.project-image:hover {
+  filter: grayscale(0%);
 }
